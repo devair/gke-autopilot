@@ -4,6 +4,10 @@ Este projeto cria uma infraestrutura de Kubernetes no Google Cloud.
 
 
 
+## Bucket para o Terraform
+Criar um bucket com nome **gke-bucket** no Cloud Storage para armazenar as variáveis de estado do Terraform.
+Desta forma é mantido em nuvem quais recursos foram criados.
+
 ## Executar localmente  
 
 Clone o projeto 
@@ -17,6 +21,7 @@ Acesse o diretório do projeto
 ~~~bash  
   cd gke-autopilot
 ~~~
+
 
 Inicie o Terraform executando os seguintes comandos
 

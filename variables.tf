@@ -1,6 +1,6 @@
 
 variable "project_id" {
-    default  = "k8s-fiap"  
+  default = "k8s-fiap"
 }
 
 variable "region" {
