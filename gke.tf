@@ -16,4 +16,7 @@ resource "google_container_cluster" "primary" {
 
   # Enabling Autopilot for this cluster
   enable_autopilot = true
+
+  # Enabling cluster deletion
+  deletion_protection = false
 }
