@@ -1,8 +1,30 @@
 
 variable "project_id" {
-  default = "k8s-fiap"
+  description = "Google Project ID"
+  type        = string
 }
 
 variable "region" {
-  default = "us-central1"
+  description = "Google region"
+  type        = string
+}
+
+variable "postgres_root_password" {
+  description = "Postgres password"
+  type        = string
+}
+
+variable "postgres_database" {
+  description = "Postgres database name"
+  type        = string
+}
+
+variable "postgres_username" {
+  description = "Postgres username"
+  type        = string
+}
+
+variable "postgres_password" {
+  description = "Postgres user password"
+  type        = string
 }

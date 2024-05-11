@@ -3,7 +3,7 @@ resource "google_sql_database_instance" "my_instance" {
   name             = "postgresql-instance"
   region           = var.region
   database_version = "POSTGRES_14"
-  root_password    = "abcABC123!"
+  root_password    = var.postgres_root_password
   project          = var.project_id
 
   depends_on = [data.google_compute_network.default]
@@ -26,14 +26,14 @@ resource "google_sql_database_instance" "my_instance" {
 
 # Set up Database and Users
 resource "google_sql_database" "my_database" {
-  name     = "pedidos_db"
-  project  = "k8s-fiap"
+  name     = var.postgres_database
+  project  = var.project_id
   instance = google_sql_database_instance.my_instance.name
 }
 
 resource "google_sql_user" "my_user" {
-  name     = "docker"
-  project  = "k8s-fiap"
+  name     = var.postgres_username
+  project  = var.project_id
   instance = google_sql_database_instance.my_instance.name
-  password = "Docker123@"
+  password = var.postgres_password
 }
