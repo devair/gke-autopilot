@@ -45,5 +45,5 @@ Essa ação impede que este projeto fique alocando na nuvem consumindo recursos 
 terraform destroy
 ~~~
 ## Documentação de referência  
+- [Autopilot overview](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview)
 - [Cloud SQL](https://cloud.google.com/sql?hl=pt-BR)  
-- [Cloud SQL Auth Proxy Documentation](https://cloud.google.com/sql?hl=pt-BR)  
