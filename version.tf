@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "gke-bucket"
+    bucket = "gke-bucket-dft-fiap"
     prefix = "terraform/state"
   }
 
